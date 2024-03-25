@@ -25,7 +25,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cors());
 
 // Now setup some routes
-app.use("/", AdminRoutes);
+app.use("/admin", AdminRoutes);
 app.use("/courses", CourseRoutes);
 app.use("/experience", ExperienceRoutes);
 app.use("/project", ProjectRoutes);

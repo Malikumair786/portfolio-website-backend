@@ -7,9 +7,9 @@ import {
 } from "../controllers/AdminController.js";
 const router = Express.Router();
 
-router.get("/admin", getAdmin);
-router.post("/admin", addAdmin);
-router.put("/admin/:id", updateAdmin);
-router.delete("/admin/:id", deleteAdmin);
+router.get("/", getAdmin);
+router.post("/", addAdmin);
+router.put("/:id", updateAdmin);
+router.delete("/:id", deleteAdmin);
 
 export default router;
